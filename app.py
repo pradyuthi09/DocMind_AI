@@ -137,6 +137,10 @@ with st.sidebar:
     st.markdown("### 💬 Your Chats")
     
     for s_id, s_data in list(st.session_state.sessions.items()):
+        # Skip displaying empty/un-uploaded chats in the history list
+        if s_data['file_name'] == "Untitled Document":
+            continue
+            
         is_active = (s_id == st.session_state.current_session_id)
         btn_label = f"📄 {s_data['file_name'][:20]}" + ("..." if len(s_data['file_name']) > 20 else "")
         
