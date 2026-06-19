@@ -1,0 +1,23 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache and bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local environment variables / secrets
+.env
+
+# Vector databases & temporary data
+chroma_db/
+data/
+chroma_db_*
+data/*
+
+# Streamlit configurations
+.streamlit/
