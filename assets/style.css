@@ -161,6 +161,7 @@ div.stButton > button[kind="primary"]:hover {
     margin-left: auto !important;
     max-width: 75% !important;
     border-radius: 18px 18px 0px 18px !important;
+    flex-direction: row-reverse !important;
 }
 
 /* Streamlit Chat Input styling */
